@@ -102,25 +102,33 @@ const zooAnimals = [
     * The last parameter accepts a callback
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
-  function consume(a, b, cb){
-    return cb(a, b);
-  }
+  // function consume(a, b, cb){
+  //   return cb(a, b);
+  // }
  
+  let consume = (a, b, cb) => cb(a, b);
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Create a function named add that returns the sum of two numbers 🦁🦁🦁
-  function add(a, b){
-    return a + b;
-  }
+  // function add(a, b){
+  //   return a + b;
+  // }
+
+  let add = (a, b) => a + b;
+
 // 🦁🦁🦁 Create a function named multiply that returns the product of two numbers 🦁🦁🦁
-  function multiply(a, b){
-   return a * b;
-  }
+  // function multiply(a, b){
+  //  return a * b;
+  // }
+
+  let multiply = (a, b) => a * b;
 
  // 🦁🦁🦁 Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!" 🦁🦁🦁
-  function greeting(a, b){
-   return `Hello ${a} ${b}, nice to meet you!`;
-  }
+  // function greeting(a, b){
+  //  return `Hello ${a} ${b}, nice to meet you!`;
+  // }
+
+  let greeting = (a, b) => `Hello ${a} ${b}, nice to meet you!`;
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -213,7 +221,19 @@ class CuboidMakerTwo{
 
 // 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
   
+// class CubeMaker extends CuboidMaker{
+//   constructor(attributes){
+//     super(attributes);
+//   }
+// }
 
+// let cube = new Cubemaker({
+//   length: 3,
+//   width: 3,
+//   height: 3,
+// });
+
+// console.log(cube.volume);
 
 
 
